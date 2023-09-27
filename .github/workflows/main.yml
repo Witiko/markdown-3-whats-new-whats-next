@@ -1,0 +1,55 @@
+name: Typeset paper
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  DEBIAN_FRONTEND: noninteractive
+jobs:
+  typeset-paper:
+    name: Typeset paper
+    runs-on: ubuntu-latest
+    container:
+      image: texlive/texlive:latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install FFmpeg
+        run: |
+          set -e
+          apt-get -qy update
+          apt-get -qy install --no-install-recommends ffmpeg
+      - name: Convert subtitles
+        run: |
+          set -e
+          ffmpeg -i markdown-3-cs.ass markdown-3-cs.srt
+          ffmpeg -i markdown-3-en.ass markdown-3-en.srt
+      - name: Typeset paper
+        run: latexmk -lualatex -shell-escape main.tex
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: main
+          path: |
+            main.pdf
+            markdown-3-cs.ass
+            markdown-3-cs.srt
+            markdown-3-en.ass
+            markdown-3-en.srt
+      - name: Create a prerelease
+        if: github.ref == 'refs/heads/main'
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          title: The latest version
+          automatic_release_tag: latest
+          prerelease: true
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            main.pdf
+            main.pdf
+            markdown-3-cs.ass
+            markdown-3-cs.srt
+            markdown-3-en.ass
+            markdown-3-en.srt
