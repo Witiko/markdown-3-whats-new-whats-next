@@ -205,8 +205,8 @@ Dialogue: 0,0:13:00.80,0:13:05.34,Default,,0,0,0,,horní a dolní indexy a pře�
 Dialogue: 0,0:13:05.34,0:13:10.12,Default,,0,0,0,,Pro každý z těchto prvků mohou TeXperti definovat formátování
 Dialogue: 0,0:13:10.12,0:13:12.12,Default,,0,0,0,,na základě požadavků vydavatele.
 Dialogue: 0,0:13:18.54,0:13:21.74,Default,,0,0,0,,Aby byl balíček Markdown užitečnější,
-Dialogue: 0,0:13:21.74,0:13:25.14,Default,,0,0,0,,byla nedávno přidána podpora pro nové formáty
-Dialogue: 0,0:13:25.14,0:13:26.54,Default,,0,0,0,,kromě plain TeXu, LaTeXu a ConTeXtu.
+Dialogue: 0,0:13:21.74,0:13:25.14,Default,,0,0,0,,byla nedávno přidána podpora pro nové formáty,
+Dialogue: 0,0:13:25.14,0:13:26.54,Default,,0,0,0,,nejen plain TeX, LaTeX a ConTeXt.
 Dialogue: 0,0:13:26.88,0:13:31.42,Default,,0,0,0,,Nové formáty podporované balíčkem Markdown jsou TeX4ht,
 Dialogue: 0,0:13:31.42,0:13:36.54,Default,,0,0,0,,který autoři mohou použít k vytváření webových stránek místo PDF dokumentů pro tisk,
 Dialogue: 0,0:13:36.54,0:13:42.42,Default,,0,0,0,,a také OpTeX, což je minimalistický formát
@@ -372,7 +372,7 @@ Dialogue: 0,0:26:16.22,0:26:18.20,Default,,0,0,0,,balíčku Markdown pro TeX
 Dialogue: 0,0:26:18.20,0:26:23.00,Default,,0,0,0,,z pohledu tří zainteresovaných stran: autorů, TeXpertů a vývojářů.
 Dialogue: 0,0:26:23.00,0:26:27.40,Default,,0,0,0,,Slovy Petra Sojky a Johna Lennona bych chtěl říci:
 Dialogue: 0,0:26:27.40,0:26:31.64,Default,,0,0,0,,Prosím, vše, co říkáme, je „dejte markdownu šanci!“
-Dialogue: 0,0:26:31.64,0:26:34.88,Default,,0,0,0,,Doufám, že jste přednášku shledali zajímavou
+Dialogue: 0,0:26:31.64,0:26:34.88,Default,,0,0,0,,Doufám, že jste přednášku shledali zajímavou,
 Dialogue: 0,0:26:34.88,0:26:39.08,Default,,0,0,0,,a rád zodpovím veškeré vaše otázky
 Dialogue: 0,0:26:39.08,0:26:44.68,Default,,0,0,0,,buď nyní, během přestávky na kávu, nebo v průběhu konference. Děkuji!
 Dialogue: 0,0:26:44.68,0:26:51.64,Audience,,0,0,0,,[potlesk]
